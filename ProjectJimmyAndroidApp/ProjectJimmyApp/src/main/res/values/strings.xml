@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Project Jimmy</string>
+
+    <string name="time_intervals">Change Time Intervals</string>
+    <string name="time_display">%1$02dh %2$02dm</string>
+    <string name="set_min_interval_title">Set Minimum Interval</string>
+    <string name="set_max_interval_title">Set Maximum Interval</string>
+    <string name="min_interval_error">The minimum interval cannot be greater than the maximum interval</string>
+    <string name="max_interval_error">The maximum interval cannot be less than the minimum interval</string>
+</resources>

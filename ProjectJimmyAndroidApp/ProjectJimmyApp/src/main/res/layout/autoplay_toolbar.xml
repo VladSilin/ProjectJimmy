@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:minHeight="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    app:titleTextAppearance="@style/ToolbarTitle"
+    android:layout_height="wrap_content"
+    app:layout_scrollFlags="scroll|enterAlways"
+    tools:showIn="@layout/activity_main">
+
+    <RelativeLayout
+        android:id="@+id/rlToolBarMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="right|center_vertical">
+
+        <TextView
+            android:id="@+id/intervals_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Play every"
+            android:layout_margin="2dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            android:id="@+id/min_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/intervals_text"
+            android:textStyle="bold"
+            android:layout_margin="2dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground" />
+
+        <TextView
+            android:id="@+id/intervals_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/min_value"
+            android:text="to"
+            android:layout_margin="2dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            android:id="@+id/max_interval_value_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/intervals_text2"
+            android:textStyle="bold"
+            android:layout_margin="2dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>
